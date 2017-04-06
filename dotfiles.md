@@ -32,10 +32,11 @@ dotfiles push
 ## Развертывание на новом компьютере
 
 ```bash
+cd ~
 git clone --bare git@github.com:radimih/dotfiles.git $HOME/.dotfiles
 alias dotfiles='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 dotfiles config --local status.showUntrackedFiles no
-dotfiles checkout
+dotfiles checkout --force
 ```
 
 ## Разделение по компьютерам
