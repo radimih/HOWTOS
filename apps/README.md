@@ -1,21 +1,21 @@
-# Apps
+# Приложения
 
-## Первоначальный набор пакетов
+### Первоначальный набор пакетов
 
 Важные утилиты:
 
 ```bash
-sudo apt install -y --no-install-recommends git wget curl xclip
+sudo apt install -y git wget curl xclip
 ```
 
 Для удобной установки программ из сторонних репозиториев:
 
 ```bash
-sudo apt install -y --no-install-recommends ca-certificates apt-transport-https software-properties-common
+sudo apt install -y ca-certificates apt-transport-https software-properties-common
 ```
 
-## Системные приложения
+### Системные приложения
 
-1. [zsh](zsh.md)
-1. [vim](vim.md)
+* [zsh](zsh.md) - отличная командная оболочка
+* [vim](vim.md) - крутой редактор
 
