@@ -15,7 +15,7 @@ dotfiles add .gitignore
 dotfiles commit -m "Initial commit"
 dotfiles push --set-upstream origin master
 ```
-ВНИМАНИЕ! Не забыть добавить в `.bashrc` или `.zshrc` команду:
+ВНИМАНИЕ! Не забыть добавить алиас в `.bash_aliases` и `.zshrc`:
 ```bash
 alias dotfiles='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 ```
