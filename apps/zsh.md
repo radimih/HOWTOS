@@ -18,7 +18,7 @@ chsh -s /usr/bin/zsh
 oh-my-zsh и его кастомные плагины устанавливаются в виде git-подмодулей
 в репозитории [dotfiles](https://github.com/radimih/dotfiles):
 * каталог `~/.oh-my-zsh` - сам oh-my-zsh (путь указывается в переменной `ZSH`)
-* каталог `~/.oh-my-zsh-custom` - кастомные модули и плагины (путь указывается в переменной `ZSH_CUSTOM`)
+* каталог `~/.oh-my-zsh-custom` - сторонние модули и плагины (путь указывается в переменной `ZSH_CUSTOM`)
 
 Поэтому если они уже есть 
 Внимание! предполагается, что [dotfiles](/dotfiles.md) уже установлен.
@@ -45,7 +45,7 @@ oh-my-zsh и его кастомные плагины устанавливают
   
     Другие параметры смотрите в файле [`~/.oh-my-zsh/templates/zshrc.zsh-template`](https://github.com/robbyrussell/oh-my-zsh/blob/master/templates/zshrc.zsh-template)
 
-### Установка произвольного кастомного плагина
+### Установка стороннего плагина,не входящуего в oh-my-zsh
 
 1. Добавить в каталог `$ZSH_CUSTOM/plugins` плагин в виде git-подмодуля репозитория `dotfiles`:
 
@@ -58,7 +58,7 @@ oh-my-zsh и его кастомные плагины устанавливают
 
     `plugins=( [plugins...] `*`{название плагина}`*`)`
 
-### Интересные кастомные плагины
+### Интересные сторонние плагины
 
 * [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting) - подсветка синтаксиса в командной строке
 * [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions) - автодополнение командной строки
