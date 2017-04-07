@@ -51,12 +51,12 @@ oh-my-zsh и его кастомные плагины устанавливают
 
     ```bash
     cd $ZSH_CUSTOM/plugins
-    dotfiles submodule add {URL модуля}
+    dotfiles submodule add {URL репозитория плагина}
     ```
   
 1. Активировать плагин в `~/.zshrc`:
 
-    `plugins=([plugins...] `*`{название плагина}`*`)`
+    `plugins=( [plugins...] `*`{название плагина}`*`)`
 
 ### Интересные кастомные плагины
 
