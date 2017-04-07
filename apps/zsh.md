@@ -27,16 +27,23 @@ oh-my-zsh и его кастомные плагины устанавливают
     ```bash
     cd ~
     dotfiles submodule add https://github.com/robbyrussell/oh-my-zsh.git .oh-my-zsh
-    dotfiles commit -m "Add Oh-my-zsh"
+    cp -r .oh-my-zsh/custom .oh-my-zsh-custom
     ```
 
-1. В `.zshrc` добавить следующие строки:
+1. В `.zshrc` где-нибудь в начале добавить следующие строки:
 
     ```bash
-    ZSH=
+    export ZSH=$HOME/.oh-my-zsh
+    export ZSH_CUSTOM=$HOME/.oh-my-zsh-custom
+    
+    ZSH_THEME="robbyrussell"
+    
+    plugins=(git)
+
+    source $ZSH/oh-my-zsh.sh
     ```
   
-    Другие параметры смотрите в файле `~/.oh-my-zsh/templates/zshrc.zsh-template`
+    Другие параметры смотрите в файле [`~/.oh-my-zsh/templates/zshrc.zsh-template`](https://github.com/robbyrussell/oh-my-zsh/blob/master/templates/zshrc.zsh-template)
 
 ### Установка произвольного кастомного плагина
 
@@ -45,7 +52,6 @@ oh-my-zsh и его кастомные плагины устанавливают
     ```bash
     cd $ZSH_CUSTOM/plugins
     dotfiles submodule add {URL модуля}
-    dotfiles commit -m "Add custom oh-my-zsh plugin"
     ```
   
 1. Активировать плагин в `~/.zshrc`:
@@ -55,4 +61,4 @@ oh-my-zsh и его кастомные плагины устанавливают
 ### Интересные кастомные плагины
 
 * [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting) - подсветка синтаксиса в командной строке
-* [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions) - автодополнение в командной строке
+* [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions) - автодополнение командной строки
