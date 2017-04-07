@@ -15,12 +15,11 @@ chsh -s /usr/bin/zsh
 ```
 ### Установка [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
 
-oh-my-zsh и его кастомные плагины устанавливаются в виде git-подмодулей
+oh-my-zsh и сторонние плагины к нему устанавливаются в виде git-подмодулей
 в репозитории [dotfiles](https://github.com/radimih/dotfiles):
 * каталог `~/.oh-my-zsh` - сам oh-my-zsh (путь указывается в переменной `ZSH`)
 * каталог `~/.oh-my-zsh-custom` - сторонние модули и плагины (путь указывается в переменной `ZSH_CUSTOM`)
 
-Поэтому если они уже есть 
 Внимание! предполагается, что [dotfiles](/dotfiles.md) уже установлен.
 
 1. Установить oh-my-zsh:
