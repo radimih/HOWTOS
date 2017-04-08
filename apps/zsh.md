@@ -27,15 +27,16 @@ oh-my-zsh и сторонние плагины к нему устанавлив�
     cd ~
     dotfiles submodule add https://github.com/robbyrussell/oh-my-zsh.git .oh-my-zsh
     cp -r .oh-my-zsh/custom .oh-my-zsh-custom
+    dotfiles add .oh-my-zsh-custom
     ```
 
-1. Добавить в `.zshrc` строки:
+1. Добавить в `~/.zshrc` строки:
 
     ```bash
     export ZSH=$HOME/.oh-my-zsh
     export ZSH_CUSTOM=$HOME/.oh-my-zsh-custom
     
-    ZSH_THEME="blinks"
+    ZSH_THEME="rkj-repos"
     COMPLETION_WAITING_DOTS="true"
     
     plugins=(git)
@@ -48,6 +49,14 @@ oh-my-zsh и сторонние плагины к нему устанавлив�
     Возможные темы оформления строки приглашения (параметр ZSH_THEME):
     * [встроенные темы](https://github.com/robbyrussell/oh-my-zsh/wiki/themes)
     * [сторонние темы](https://github.com/robbyrussell/oh-my-zsh/wiki/External-themes)
+    
+1. По окончании настройки не забыть сохранить изменения в репозитории dotfiles:
+    
+    ```bash
+    dotfiles add ~/.zshrc
+    dotfiles commit -m "Add zsh and oh-my-zsh"
+    dotfiles push
+    ```
 
 ### Установка стороннего плагина, не входящего в oh-my-zsh
 
