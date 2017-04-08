@@ -42,7 +42,7 @@
         --enable-python3interp=yes \
         --with-python3-config-dir=`ls -1d /usr/lib/python*/config-* | tail -1` \
         --prefix=/usr \
-        --with-compiledby="Radimir Mikhailov"
+        --with-compiledby="$USER"
     make VIMRUNTIMEDIR=/usr/share/vim/vim80
     ```
 
@@ -50,11 +50,11 @@
 
     ```bash
     sudo apt-get install checkinstall
-    sudo checkinstall -y --pkgname vim-radimir
+    sudo checkinstall -y --pkgname vim-own
     ```
     
     Посмотреть текущую конфигурацию vim: `vim --version`
-    Удалить vim из системы: `dpkg -r vim-radimir`
+    Удалить vim из системы: `dpkg -r vim-own`
 
 1. Сделать vim редактором по-умолчанию:
 
