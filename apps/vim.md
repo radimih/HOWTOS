@@ -50,7 +50,19 @@
 
     ```bash
     sudo apt-get install checkinstall
-    sudo checkinstall
+    sudo checkinstall -y --pkgname vim-radimir
     ```
     
+    Посмотреть текущую конфигурацию vim: `vim --version`
+    Удалить vim из системы: `dpkg -r vim-radimir`
+
+1. Сделать vim редактором по-умолчанию:
+
+    ```bash
+    sudo update-alternatives --install /usr/bin/editor editor /usr/bin/vim 1
+    sudo update-alternatives --set editor /usr/bin/vim
+    sudo update-alternatives --install /usr/bin/vi vi /usr/bin/vim 1
+    sudo update-alternatives --set vi /usr/bin/vim
+    ```
+
     
