@@ -35,7 +35,7 @@ oh-my-zsh и сторонние плагины к нему устанавлив�
     export ZSH=$HOME/.oh-my-zsh
     export ZSH_CUSTOM=$HOME/.oh-my-zsh-custom
     
-    ZSH_THEME="robbyrussell"
+    ZSH_THEME="blinks"
     COMPLETION_WAITING_DOTS="true"
     
     plugins=(git)
@@ -45,7 +45,7 @@ oh-my-zsh и сторонние плагины к нему устанавлив�
   
     Полный список параметров oh-my-zsh смотрите в файле [`~/.oh-my-zsh/templates/zshrc.zsh-template`](https://github.com/robbyrussell/oh-my-zsh/blob/master/templates/zshrc.zsh-template).
     
-    Возможные темы оформления строки приглашения:
+    Возможные темы оформления строки приглашения (параметр ZSH_THEME):
     * [встроенные темы](https://github.com/robbyrussell/oh-my-zsh/wiki/themes)
     * [сторонние темы](https://github.com/robbyrussell/oh-my-zsh/wiki/External-themes)
 
