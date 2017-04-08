@@ -36,13 +36,16 @@ oh-my-zsh и сторонние плагины к нему устанавлив�
     export ZSH_CUSTOM=$HOME/.oh-my-zsh-custom
     
     ZSH_THEME="robbyrussell"
+    COMPLETION_WAITING_DOTS="true"
     
     plugins=(git)
 
     source $ZSH/oh-my-zsh.sh
     ```
   
-    Другие параметры смотрите в файле [`~/.oh-my-zsh/templates/zshrc.zsh-template`](https://github.com/robbyrussell/oh-my-zsh/blob/master/templates/zshrc.zsh-template)
+    Полный список параметров oh-my-zsh смотрите в файле [`~/.oh-my-zsh/templates/zshrc.zsh-template`](https://github.com/robbyrussell/oh-my-zsh/blob/master/templates/zshrc.zsh-template).
+    
+    Список встроенных тем: [](https://github.com/robbyrussell/oh-my-zsh/wiki/themes)
 
 ### Установка стороннего плагина, не входящего в oh-my-zsh
 
