@@ -17,11 +17,10 @@
     dotfiles push --set-upstream origin master
     ```
 
-ВНИМАНИЕ! Не забыть добавить алиас в `.bash_aliases` и `.zshrc`:
-
-```bash
-alias dotfiles='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
-```
+1. Добавить алиас в `.bash_aliases` и `.zshrc`:
+    ```bash
+    alias dotfiles='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+    ```
 
 ## Использование
 
