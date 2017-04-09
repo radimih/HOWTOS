@@ -65,4 +65,28 @@
     sudo update-alternatives --set vi /usr/bin/vim
     ```
 
+1. Удалить продукты жизнедеятельности :)
+
+    ```bash
+    cd ~
+    rm -rf vim
+    ```
+
+### Установка менеджера плагинов [vim-plug](https://github.com/junegunn/vim-plug)
+
+В файл `.vimrc` добавить команды, которые при первом запуске установят менеджер плагинов:
+
+    ```bash
+    if empty(glob('~/.vim/autoload/plug.vim'))
+     silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+        \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+      autocmd VimEnter * PlugInstall | source $MYVIMRC
+    endif
+
+    call plug#begin('~/.vim/plugins')
     
+    Plug 'jszakmeister/vim-togglecursor'
+    
+    call plug#end()
+    ```
+
