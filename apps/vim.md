@@ -76,7 +76,7 @@
 
 В файл `.vimrc` добавить команды, которые при первом запуске установят менеджер плагинов:
 
-    ```bash
+    ```vim
     if empty(glob('~/.vim/autoload/plug.vim'))
      silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
         \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
