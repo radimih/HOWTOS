@@ -53,8 +53,7 @@
     sudo checkinstall -y --pkgname vim-own
     ```
     
-    Посмотреть текущую конфигурацию vim: `vim --version`
-
+    Посмотреть текущую конфигурацию vim: `vim --version`  
     Удалить vim из системы: `dpkg -r vim-own`
 
 1. Сделать vim редактором по-умолчанию:
