@@ -23,7 +23,7 @@ go get github.com/grafov/shift-shift
 mv bin/shift-shift ~
 cd ~
 rm -rf ss
-sudo apt remove golang libx11-dev
+sudo apt remove -y golang libx11-dev
 sudo apt autoremove
 ```
 #### В контейнере Docker:
