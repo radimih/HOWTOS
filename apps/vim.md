@@ -76,19 +76,19 @@
 
 В файл `.vimrc` добавить команды, которые при первом запуске установят менеджер плагинов:
 
-    ```bash
-    if empty(glob('~/.vim/autoload/plug.vim'))
-     silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
-        \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-      autocmd VimEnter * PlugInstall | source $MYVIMRC
-    endif
+```bash
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+     \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+   autocmd VimEnter * PlugInstall | source $MYVIMRC
+endif
 
-    call plug#begin('~/.vim/plugins')
+call plug#begin('~/.vim/plugins')
     
-    Plug 'jszakmeister/vim-togglecursor'
+Plug 'jszakmeister/vim-togglecursor'
     
-    call plug#end()
-    ```
+call plug#end()
+```
 
 #### Команды менеджера плагинов:
 
