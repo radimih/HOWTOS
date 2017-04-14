@@ -18,4 +18,4 @@ sudo apt install -y ca-certificates apt-transport-https software-properties-comm
 
 * [zsh](zsh.md) - отличная командная оболочка
 * [vim](vim.md) - крутой редактор
-
+* [shift-shift](shift-shift.md) - немодальный переключатель раскладки клавиатуры
