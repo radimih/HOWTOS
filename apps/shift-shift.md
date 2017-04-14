@@ -18,7 +18,7 @@ sudo apt install golang libx11-dev
 mkdir ss
 cd ss
 export GOPATH=~/ss
-go get github.com/gvalkov/golang-evdev/evdev
+go get github.com/gvalkov/golang-evdev/evdev # возможна ошибка компиляции, игнорируем
 go get github.com/grafov/shift-shift
 mv bin/shift-shift ~
 cd ~
