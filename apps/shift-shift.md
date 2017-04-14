@@ -17,11 +17,16 @@
 sudo apt install golang libx11-dev
 mkdir ss
 cd ss
-GOPATH=ss
+export GOPATH=~/ss
 go get github.com/gvalkov/golang-evdev/evdev
-go build github.com/grafov/shift-shift
+go get github.com/grafov/shift-shift
+mv bin/shift-shift ~
+cd ~
+rm -rf ss
+sudo apt remove golang libx11-dev
+sudo apt autoremove
 ```
-#### В контейнере Docker
+#### В контейнере Docker:
 
 ### Установка
 
