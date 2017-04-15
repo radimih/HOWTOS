@@ -14,3 +14,9 @@
 
 1. `$ sudoedit /usr/share/X11/xkb/symbols/ru`
 1. 
+
+###  Тюнинг файловой системы
+
+* Для несистемных ext4-разделов (например, `/home`) убрать резервирование 5% для root'а:
+    1. `$ mount -l -t ext4`
+    1. `$ sudo tune2fs -m 0 /dev/sda<номер>`
