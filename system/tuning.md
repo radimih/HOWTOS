@@ -10,3 +10,7 @@
     1. `$ sudo sysctl -p`
     1. `$ ifconfig`
 
+### Символ '#' в русской раскладке
+
+    1. `$ sudoedit /usr/share/X11/xkb/symbols/ru`
+    1. 
