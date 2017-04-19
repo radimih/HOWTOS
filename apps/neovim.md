@@ -9,7 +9,7 @@ cmap w!! w !sudo tee > /dev/null %
 
 ### Установка менеджера плагинов [vim-plug](https://github.com/junegunn/vim-plug)
 
-В файл `.init.vim` добавить команды, которые при первом запуске установят менеджер плагинов:
+В файл `~/.config/nvim/init.vim` добавить команды, которые при первом запуске установят менеджер плагинов:
 
 ```vim
 let vim_plug_file = expand('~/.config/nvim/autoload/plug.vim')
