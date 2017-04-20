@@ -36,3 +36,13 @@ call plug#end()
 * :**PlugInstall** [name ...] - для установки плагинов
 * :**PlugUpdate** [name ...] - для обновления плагинов
 * :**PlugUpgrade** - для обновления самого менеджера плагинов
+
+### Установка плагина [Vim-xkbswitch](https://github.com/lyokha/vim-xkbswitch)
+
+```bash
+$ sudo apt install build-essential cmake libxkbfile-dev
+$ mkdir build && cd build
+$ cmake ..
+$ make
+
+```
