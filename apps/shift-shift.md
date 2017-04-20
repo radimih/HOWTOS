@@ -12,7 +12,7 @@
 #### На Debian/Ubuntu:
 
 ```bash
-sudo apt install golang libx11-dev
+sudo apt install libx11-dev golang
 mkdir ss
 cd ss
 export GOPATH=~/ss
@@ -21,7 +21,7 @@ go get github.com/grafov/shift-shift
 mv bin/shift-shift ~
 cd ~
 rm -rf ss
-sudo apt remove -y golang libx11-dev
+sudo apt remove -y golang
 sudo apt autoremove
 ```
 #### В контейнере Docker:
