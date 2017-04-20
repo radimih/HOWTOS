@@ -12,6 +12,9 @@ cmap w!! w !sudo tee > /dev/null %
 В файл `~/.config/nvim/init.vim` добавить команды, которые при первом запуске установят менеджер плагинов:
 
 ```vim
+"-------------------------------------------------------------------------------
+" Автоматическая установка менеджера плагинов vim-plug
+"-------------------------------------------------------------------------------
 let vim_plug_file = expand('~/.config/nvim/autoload/plug.vim')
 
 if !filereadable(vim_plug_file)
@@ -36,13 +39,3 @@ call plug#end()
 * :**PlugInstall** [name ...] - для установки плагинов
 * :**PlugUpdate** [name ...] - для обновления плагинов
 * :**PlugUpgrade** - для обновления самого менеджера плагинов
-
-### Установка плагина [Vim-xkbswitch](https://github.com/lyokha/vim-xkbswitch)
-
-```bash
-$ sudo apt install build-essential cmake libxkbfile-dev
-$ mkdir build && cd build
-$ cmake ..
-$ make
-
-```
