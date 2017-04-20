@@ -10,8 +10,8 @@
 ### Установка zsh
 
 ```bash
-sudo apt install -y zsh
-chsh -s /usr/bin/zsh
+$ sudo apt install -y zsh
+$ chsh -s /usr/bin/zsh
 ```
 ### Установка [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
 
@@ -24,10 +24,10 @@ oh-my-zsh и сторонние плагины к нему устанавлив�
 
 1. Установить oh-my-zsh:
     ```bash
-    cd ~
-    dotfiles submodule add https://github.com/robbyrussell/oh-my-zsh.git .oh-my-zsh
-    cp -r .oh-my-zsh/custom .oh-my-zsh-custom
-    dotfiles add .oh-my-zsh-custom
+    $ cd ~
+    $ dotfiles submodule add https://github.com/robbyrussell/oh-my-zsh.git .oh-my-zsh
+    $ cp -r .oh-my-zsh/custom .oh-my-zsh-custom
+    $ dotfiles add .oh-my-zsh-custom
     ```
 
 1. Добавить в `~/.zshrc` строки:
@@ -53,9 +53,9 @@ oh-my-zsh и сторонние плагины к нему устанавлив�
 1. По окончании настройки не забыть сохранить изменения в репозитории dotfiles:
     
     ```bash
-    dotfiles add ~/.zshrc
-    dotfiles commit -m "Add zsh and oh-my-zsh"
-    dotfiles push
+    $ dotfiles add ~/.zshrc
+    $ dotfiles commit -m "Add zsh and oh-my-zsh"
+    $ dotfiles push
     ```
 
 ### Установка стороннего плагина, не входящего в oh-my-zsh
@@ -63,8 +63,8 @@ oh-my-zsh и сторонние плагины к нему устанавлив�
 1. Добавить в каталог `$ZSH_CUSTOM/plugins` плагин в виде git-подмодуля репозитория `dotfiles`:
 
     ```bash
-    cd $ZSH_CUSTOM/plugins
-    dotfiles submodule add {URL репозитория плагина}
+    $ cd $ZSH_CUSTOM/plugins
+    $ dotfiles submodule add {URL репозитория плагина}
     ```
   
 1. Активировать плагин в `~/.zshrc`:
