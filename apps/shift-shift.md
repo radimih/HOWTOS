@@ -18,7 +18,7 @@ cd ss
 export GOPATH=~/ss
 go get github.com/gvalkov/golang-evdev/evdev # возможна ошибка компиляции, игнорируем
 go get github.com/grafov/shift-shift
-mv bin/shift-shift ~
+mv bin/shift-shift ~/bin
 cd ~
 rm -rf ss
 sudo apt remove -y golang
