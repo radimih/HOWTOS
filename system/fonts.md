@@ -10,3 +10,4 @@ $ sudo curl -Lo /etc/fonts/conf.d/10-powerline-symbols.conf \
     https://github.com/powerline/powerline/raw/develop/font/10-powerline-symbols.conf
 $ fc-cache
 ```
+Далее перезапустить X-сессию.
