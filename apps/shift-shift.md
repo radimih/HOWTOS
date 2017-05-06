@@ -35,4 +35,4 @@ SUID:
 $ sudo chown root:root ~/bin/shift-shift* && sudo chmod u+s ~/bin/shift-shift*
 ```
 
-Обычно сам запуск программы осуществляется в файле `~/.xprofile`.
+Сам запуск программы удобно осуществлять в скрипте `~/.xprofile`.
