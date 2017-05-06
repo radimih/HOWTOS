@@ -35,4 +35,11 @@ SUID:
 $ sudo chown root:root ~/bin/shift-shift* && sudo chmod u+s ~/bin/shift-shift*
 ```
 
-Сам запуск программы удобно осуществлять в скрипте `~/.xprofile`.
+Сам запуск программы удобно осуществлять в скрипте `~/.xprofile`:
+
+```bash
+SHIFT_SHIFT_NAME=shift-shift-$(uname -i)
+
+[ -x $HOME/bin/$SHIFT_SHIFT_NAME ] && \
+  ( pidof $SHIFT_SHIFT_NAME > /dev/null || $HOME/bin/$SHIFT_SHIFT_NAME -quiet > /dev/null & )
+```
