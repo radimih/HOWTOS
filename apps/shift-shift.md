@@ -32,7 +32,5 @@ $ sudo apt remove -y golang && sudo apt autoremove
 SUID:
 
 ```bash
-$ cd ~/bin
-$ sudo chown root:root shift-shift
-$ sudo chmod u+s shift-shift
+$ sudo chown root:root ~/bin/shift-shift && sudo chmod u+s ~/bin/shift-shift
 ```
