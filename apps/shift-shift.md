@@ -13,14 +13,14 @@
 
 ```bash
 $ sudo apt install libx11-dev golang
+$ sudo apt install libc6-dev  # для 32-х битной системы
 $ mkdir ss
 $ cd ss
 $ export GOPATH=~/ss
-$ go get github.com/gvalkov/golang-evdev/evdev # возможна ошибка компиляции, игнорируем
+$ go get github.com/gvalkov/golang-evdev/evdev  # возможна ошибка компиляции, игнорируем
 $ go get github.com/grafov/shift-shift
-$ mv bin/shift-shift ~/bin
-$ cd ~
-$ rm -rf ss
+$ mv bin/shift-shift ~/bin/shift-shift-$(uname -i)
+$ cd .. && rm -rf ss
 $ sudo apt remove -y golang && sudo apt autoremove
 ```
 #### В контейнере Docker:
@@ -32,5 +32,5 @@ $ sudo apt remove -y golang && sudo apt autoremove
 SUID:
 
 ```bash
-$ sudo chown root:root ~/bin/shift-shift && sudo chmod u+s ~/bin/shift-shift
+$ sudo chown root:root ~/bin/shift-shift* && sudo chmod u+s ~/bin/shift-shift*
 ```
