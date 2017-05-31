@@ -20,4 +20,4 @@ $ sudo apt install -y ca-certificates apt-transport-https software-properties-co
 * [vim](vim.md) - крутой редактор
 * [neovim](neovim.md) - улучшенная версия редактора vim :)
 * [shift-shift](shift-shift.md) - немодальный переключатель раскладки клавиатуры
-* [xkb-switch](xkb-switch.md) - утилита для "ручного" переключения раскладки клавиатуры
+* [xkb-switch](xkb-switch.md) - утилита для "ручного" переключения раскладки клавиатуры (для VIM'а)
