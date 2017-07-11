@@ -16,6 +16,8 @@ $ sudo apt install -y ca-certificates apt-transport-https software-properties-co
 
 ### Системные приложения
 
+* [ag](https://github.com/ggreer/the_silver_searcher) - очень быстрый поиск (вместо grep)
+* [fzf](fzf.md) - нечеткий поиск из командной строки (может использовать `ag`) + плагин для VIM'а
 * [zsh](zsh.md) - отличная командная оболочка
 * [vim](vim.md) - крутой редактор
 * [neovim](neovim.md) - улучшенная версия редактора vim :)
