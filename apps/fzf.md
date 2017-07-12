@@ -19,7 +19,7 @@
 ### Установка
 
 Стандартный способ установки, описанный в документации на GitHub'е - через `git clone`.
-Здесь описан способ через git-submodule системы [dotfiles](/radimih/HOWTOS/blob/master/dotfiles.md).
+Здесь описан способ через git-submodule системы [dotfiles](../dotfiles.md).
 
 ```bash
 $ cd ~
