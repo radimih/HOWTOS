@@ -75,3 +75,4 @@ oh-my-zsh и сторонние плагины к нему устанавлив�
 
 * [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting) - подсветка синтаксиса в командной строке
 * [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions) - автодополнение командной строки
+* [deer](https://github.com/radimih/HOWTOS/blob/master/apps/deer.md) - [ranger](http://www.nongnu.org/ranger/)-подобный выбор файла или каталога в командной строке
