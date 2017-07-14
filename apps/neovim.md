@@ -2,6 +2,18 @@
 
 ### Установка
 
+Для всех "вкусняшек" необходимо ставить версию не ниже 0.2. Поэтому для Ubuntu пока ставится из **unstable**-ppa.
+
+```bash
+$ sudo apt-get install software-properties-common
+$ sudo add-apt-repository ppa:neovim-ppa/stable
+$ sudo apt-get update
+$ sudo apt-get install neovim
+
+$ sudo update-alternatives --install /usr/bin/vim vim /usr/bin/nvim 1
+$ sudo update-alternatives --config vim
+```
+
 ### Установка менеджера плагинов [vim-plug](https://github.com/junegunn/vim-plug)
 
 В файл `~/.config/nvim/init.vim` добавить команды, которые при первом запуске установят менеджер плагинов:
