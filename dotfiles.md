@@ -24,11 +24,19 @@
 
 ## Использование
 
+Внесение изменений:
+
 ```bash
 $ dotfiles status
 $ dotfiles add .zshrc
 $ dotfiles commit -m 'Add zsh config'
 $ dotfiles push
+```
+Обновление на другом компьютере:
+
+```bash
+$ dotfiles pull
+$ dotfiles submodule update --init
 ```
 
 ## Развертывание на новом компьютере
