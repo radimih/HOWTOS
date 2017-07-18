@@ -42,13 +42,14 @@ $ .fzf/install  # на все вопросы ответить утвердите
 
 ### Настройка
 
-Опции утилиты fzf:
+Опции утилиты `fzf`:
 
 ```
 export FZF_DEFAULT_OPTS='--border'
 ```
 
-Использовать утилиту [ag](ag.md) вместо find, включить в поиск скрытые файлы и игнорировать git-репы:
+Использовать утилиту [ag](https://github.com/ggreer/the_silver_searcher) вместо `find`,
+включить в поиск скрытые файлы и игнорировать git-репы:
 
 ```bash
 export FZF_DEFAULT_COMMAND='ag --hidden --ignore .git --silent -g ""'
