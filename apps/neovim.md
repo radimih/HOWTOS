@@ -14,6 +14,14 @@ $ sudo update-alternatives --install /usr/bin/vim vim /usr/bin/nvim 1
 $ sudo update-alternatives --config vim
 ```
 
+### Установка Python-окружения
+
+Для полноценной работы плагинов, написанных на Python желательно установить дополнительные пакеты:
+
+```bash
+$ sudo apt install -y python3-venv python3-dev
+```
+
 ### Установка менеджера плагинов [vim-plug](https://github.com/junegunn/vim-plug)
 
 В файл `~/.config/nvim/init.vim` добавить команды, которые при первом запуске установят менеджер плагинов:
