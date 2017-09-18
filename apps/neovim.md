@@ -2,8 +2,6 @@
 
 ### Установка
 
-Для всех "вкусняшек" необходимо ставить версию не ниже 0.2. Поэтому для Ubuntu пока ставится из **unstable**-ppa.
-
 ```bash
 $ sudo apt-get install software-properties-common
 $ sudo add-apt-repository ppa:neovim-ppa/stable
