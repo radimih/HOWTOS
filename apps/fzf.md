@@ -25,7 +25,7 @@
 ```bash
 $ cd ~
 $ dotfiles submodule add --depth 1 https://github.com/junegunn/fzf.git .fzf
-$ .fzf/install  # на все вопросы ответить утвердительно
+$ .fzf/install --all
 $ dotfiles add .fzf.zsh
 ```
 
@@ -37,7 +37,7 @@ $ dotfiles add .fzf.zsh
 
 ```bash
 $ dotfiles pull
-$ .fzf/install  # на все вопросы ответить утвердительно
+$ .fzf/install --all
 ```
 
 ### Настройка
