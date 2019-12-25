@@ -23,6 +23,7 @@ $ sudo apt install -y ca-certificates apt-transport-https software-properties-co
 ### Утилиты
 
 * [ag](https://github.com/ggreer/the_silver_searcher) - очень быстрый поиск (вместо grep)
+* [rg](https://github.com/BurntSushi/ripgrep) (ripgrep) - самый быстрый поиск (вместо ag)
 * [deer](deer.md) - [ranger](http://www.nongnu.org/ranger/)-подобная утилита выбора файла или каталога в командной строке
 * [fzf](fzf.md) - нечеткий поиск из командной строки (может использовать `ag`) + плагин для VIM'а
 
