@@ -3,6 +3,14 @@
 Утилита и библиотека для ручного переключения раскладки клавиатуры в X-сессии. В частности,
 используется в vim-плагине [Vim-xkbswitch](https://github.com/lyokha/vim-xkbswitch).
 
+Состав:
+
+* `xkb-switch` -> `/usr/local/bin/`
+* `xkb-switch.1.xz` -> `/usr/local/share/man/man1/`
+* `libxkbswitch.so.1.6.0` -> `/usr/local/lib/`
+* symlink `libxkbswitch.so.1` -> `libxkbswitch.so.1.6.0`
+* symlink `libxkbswitch.so` -> `libxkbswitch.so.1`
+
 ### Установка из исходных текстов
 
 #### Непосредственно на рабочей системе
@@ -33,11 +41,7 @@ EOF
 $ docker run -t --rm -v `pwd`:/xkb-switch/build xkb-switch sh -c "cmake .. && make"
 ```
 
-В текущем каталоге появятся необходимые артефакты:
-
-* `xkb-switch`
-* `xkb-switch.1.xz`
-* `libxkbswitch.so.1.6.0`
+В текущем каталоге появятся необходимые артефакты.
 
 Далее можно удалить уже ненужный Docker-образ:
 
