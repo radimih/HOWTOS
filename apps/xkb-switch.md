@@ -28,6 +28,25 @@ $ cd ../.. && rm -rf xkb-switch
 #### Через Docker, не "засоряя" систему
 
 ```bash
+$ cat <<EOF | docker build -t xkb-switch -
+FROM ubuntu:latest
+RUN apt-get update \
+ && apt-get install -y git build-essential cmake libxkbfile-dev \
+ && rm -rf /var/lib/apt/lists/*
+RUN git clone https://github.com/ierton/xkb-switch.git
+RUN cd xkb-switch && mkdir build && cd build \
+ && cmake .. \
+ && make
+WORKDIR /xkb-switch/build
+EOF
+$ docker run -t --rm -v /usr/local:/usr/local xkb-switch make install
+$ docker image rm xkb-switch
+$ sudo ldconfig
+```
+
+#### Просто получить артефакты, не "засоряя" систему
+
+```bash
 $ mkdir xkb-switch && cd xkb-switch
 $ cat <<EOF | docker build -t xkb-switch -
 FROM ubuntu:latest
@@ -39,12 +58,7 @@ RUN cd xkb-switch && mkdir build
 WORKDIR /xkb-switch/build
 EOF
 $ docker run -t --rm -v `pwd`:/xkb-switch/build xkb-switch sh -c "cmake .. && make"
+$ docker image rm xkb-switch
 ```
 
 В текущем каталоге появятся необходимые артефакты.
-
-Далее можно удалить уже ненужный Docker-образ:
-
-```bash
-$ docker image rm xkb-switch
-```
