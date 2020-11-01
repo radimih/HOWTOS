@@ -30,6 +30,7 @@ $ cd ../.. && rm -rf xkb-switch
 ```bash
 $ cat <<EOF | docker build -t xkb-switch -
 FROM ubuntu:latest
+ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update \
  && apt-get install -y git build-essential cmake libxkbfile-dev \
  && rm -rf /var/lib/apt/lists/*
@@ -50,6 +51,7 @@ $ sudo ldconfig
 $ mkdir xkb-switch && cd xkb-switch
 $ cat <<EOF | docker build -t xkb-switch -
 FROM ubuntu:latest
+ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update \
  && apt-get install -y git build-essential cmake libxkbfile-dev \
  && rm -rf /var/lib/apt/lists/*
