@@ -6,10 +6,10 @@
 Состав:
 
 * `xkb-switch` -> `/usr/local/bin/`
-* `xkb-switch.1.xz` -> `/usr/local/share/man/man1/`
-* `libxkbswitch.so.1.6.0` -> `/usr/local/lib/`
-* symlink `libxkbswitch.so.1` -> `libxkbswitch.so.1.6.0`
-* symlink `libxkbswitch.so` -> `libxkbswitch.so.1`
+* `xkb-switch.1.gz` -> `/usr/local/share/man/man1/`
+* `libxkbswitch.so.X.Y.Z` -> `/usr/local/lib/`
+* symlink `libxkbswitch.so.X` -> `libxkbswitch.so.X.Y.Z`
+* symlink `libxkbswitch.so` -> `libxkbswitch.so.X`
 
 ### Установка из исходных текстов
 
