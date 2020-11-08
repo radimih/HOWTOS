@@ -28,7 +28,7 @@ $ cd ../.. && rm -rf xkb-switch
 #### Через Docker, не "засоряя" систему
 
 ```bash
-$ cat <<EOF | docker build -t xkb-switch -
+$ cat <<EOF | docker build -t xkb-switch-builder -
 FROM ubuntu:latest
 ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update \
@@ -40,8 +40,8 @@ RUN cd xkb-switch && mkdir build && cd build \
  && make
 WORKDIR /xkb-switch/build
 EOF
-$ docker run -t --rm -v /usr/local:/usr/local xkb-switch make install
-$ docker image rm xkb-switch
+$ docker run -t --rm -v /usr/local:/usr/local xkb-switch-builder make install
+$ docker image rm xkb-switch-builder
 $ sudo ldconfig
 ```
 
@@ -49,7 +49,7 @@ $ sudo ldconfig
 
 ```bash
 $ mkdir xkb-switch && cd xkb-switch
-$ cat <<EOF | docker build -t xkb-switch -
+$ cat <<EOF | docker build -t xkb-switch-builder -
 FROM ubuntu:latest
 ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update \
@@ -59,8 +59,8 @@ RUN git clone https://github.com/ierton/xkb-switch.git
 RUN cd xkb-switch && mkdir build
 WORKDIR /xkb-switch/build
 EOF
-$ docker run -t --rm -v `pwd`:/xkb-switch/build xkb-switch sh -c "cmake .. && make"
-$ docker image rm xkb-switch
+$ docker run -t --rm -v `pwd`:/xkb-switch/build xkb-switch-builder sh -c "cmake .. && make"
+$ docker image rm xkb-switch-builder
 ```
 
 В текущем каталоге появятся необходимые артефакты.
